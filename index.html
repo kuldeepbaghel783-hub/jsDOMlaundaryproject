@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Service</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">LaundryPro</div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="login-btn">Login</button>
+    </nav>
+<div>
+    <!-- Hero Section -->
+    <div class="hero">
+
+        <div class="hero-text">
+            <h1>Professional Laundry Service</h1>
+
+            <p>
+                Fast, Affordable and Reliable Laundry
+                Services At Your Doorstep.
+            </p>
+
+           
+        </div>
+
+        <div class="hero-image">
+            <img src="images/hero.jpg" alt="">
+        </div>
+
+    </div>
+
+    <!-- Services Section -->
+
+<div class="services" id="services">
+
+    <h2>Our Services</h2>
+
+    <div class="service-container">
+
+        <div class="card">
+            <img src="images/dry-cleaning.jpg" alt="">
+            <h3>Dry Cleaning</h3>
+            <p>₹100</p>
+
+            <button onclick="addToCart('Dry Cleaning',100)">
+                Add Item
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="images/leather-cleaning.jpg" alt="">
+            <h3>Leather Cleaning</h3>
+            <p>₹200</p>
+
+            <button onclick="addToCart('Leather Cleaning',200)">
+                Add Item
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="images/shoe-cleaning.jpg" alt="">
+            <h3>Shoe Cleaning</h3>
+            <p>₹150</p>
+
+            <button onclick="addToCart('Shoe Cleaning',150)">
+                Add Item
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="images/washing.jpg" alt="">
+            <h3>Washing & Ironing</h3>
+            <p>₹120</p>
+
+            <button onclick="addToCart('Washing & Ironing',120)">
+                Add Item
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="cart-section">
+
+    <h2>Your Cart</h2>
+
+    <div id="cart-items"></div>
+
+    <h3>Total: ₹<span id="total">0</span></h3>
+
+</div>
+
+
+</div>
+
+<section class="booking" id="booking">
+
+    <h2>Book Your Laundry Service</h2>
+
+    <form id="bookingForm">
+
+        <input
+            type="text"
+            placeholder="Enter Full Name"
+            required
+        >
+
+        <input
+            type="email"
+            placeholder="Enter Email"
+            required
+        >
+
+        <input
+            type="tel"
+            placeholder="Enter Phone Number"
+            required
+        >
+
+        <button type="submit">
+            Confirm Booking
+        </button>
+
+    </form>
+
+</section>
+
+
+
+<footer id="contact">
+
+    <div class="footer-container">
+
+        <div>
+            <h3>LaundryPro</h3>
+
+            <p>
+                Professional Laundry Service
+                at your doorstep.
+            </p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+
+            <a href="#">Home</a>
+            <a href="#services">Services</a>
+            <a href="#booking">Booking</a>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+
+            <p>📞 +91 9876543210</p>
+            <p>📧 info@laundrypro.com</p>
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 LaundryPro. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
