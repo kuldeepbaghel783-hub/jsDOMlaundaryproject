@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laundry Service</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<nav>
+
+    <div class="logo">
+        LaundryPro
+    </div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-right">
+
+        <span class="user-info">
+            Welcome, Pinu
+        </span>
+
+        <button class="logout-btn">
+            Logout
+        </button>
+
+    </div>
+
+</nav>
+
+
+
+
+<div class="container">
+
+        <div class="left-panel">
+
+        <h2>Selected Services</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Service</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="cartBody">
+
+            </tbody>
+        </table>
+
+        <h3>Total: ₹ <span id="total">0</span></h3>
+
+        <div class="booking">
+            <h2>Book Service</h2>
+
+
+<form id="bookingForm">
+
+    <input
+        type="text"
+        placeholder="Full Name"
+        required
+    >
+
+    <input
+        type="email"
+        placeholder="Email"
+        required
+    >
+
+    <input
+        type="tel"
+        placeholder="Phone Number"
+        required
+    >
+
+    <button type="submit">
+        Book Now
+    </button>
+
+</form>
+
+
+
+
+        </div>
+
+    </div>
+
+  
+    <div class="right-panel">
+
+        <h2>Browse Our Services</h2>
+
+        <div class="service-card">
+
+            <img id="serviceImage" src="images/dry-cleaning.jpg">
+
+            <h3 id="serviceName">
+                Dry Cleaning
+            </h3>
+
+            <p id="servicePrice">
+                ₹200
+            </p>
+
+           
+<div class="buttons">
+
+    <button onclick="addCurrentService()">
+        Add item
+    </button>
+
+    <button onclick="skipService()">
+        skip item
+    </button>
+
+</div>
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js">
+
+
+
+</script>
+
+</body>
+</html>
+
